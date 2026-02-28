@@ -1,0 +1,353 @@
+/* =========================
+   RESET + BASE
+========================= */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  background: #fff url(../imagens/fundo.png) repeat-x;
+  color: #111;
+  line-height: 1.5;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+#container{
+  width: 750px;
+  margin: 0 auto;
+}
+
+/* =========================
+   TOPO
+========================= */
+#topo{
+  height: 150px;
+  background: url(../imagens/detalhe-topo.png) no-repeat right top;
+  padding-top: 25px;
+}
+
+.logo{
+  width: 152px;
+  height: 66px;
+  background: url(../imagens/logo.png) no-repeat center;
+  text-indent: -3000px;
+}
+
+/* =========================
+   LINKS (corrigido)
+========================= */
+a:link,
+a:visited{
+  color: #b10333;
+  text-decoration: none;
+}
+
+a:hover{
+  color: #e50040;
+}
+
+/* =========================
+   LISTAS
+========================= */
+ul{
+  list-style: none;
+}
+
+/* =========================
+   NAV (menu)
+========================= */
+#topo ul{
+  margin-top: 30px;
+  background: #b10333;
+  float: left;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+#topo ul li{
+  float: left;
+}
+
+#topo ul a{
+  font-size: 0.95em;
+  display: block;
+  padding: 0.6em 1.4em;
+  line-height: 2em;
+  color: #fff;
+  background: url(../imagens/divisor.png) no-repeat left center;
+  transition: background 0.2s, color 0.2s;
+}
+
+#topo ul .primeiro a{
+  background: none;
+}
+
+#topo ul a:hover{
+  background-color: rgba(255,255,255,0.12);
+  color: #ffe3ea;
+}
+
+/* item ativo */
+body.home #navegacao a#home,
+body.brasil #navegacao a#brasil,
+body.internacional #navegacao a#internacional,
+body.economia #navegacao a#economia,
+body.saude #navegacao a#saude,
+body.ciencia #navegacao a#ciencia,
+body.fotos #navegacao a#fotos{
+  color: #fff;
+  background: #de003e;
+  cursor: default;
+}
+
+/* =========================
+   LAYOUT (conteúdo)
+========================= */
+#conteudo{
+  margin-top: 60px;
+  background: #f5f5f5;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+#lateral{
+  width: 180px;
+  float: left;
+  margin: 0 0 20px -750px;
+}
+
+#duas-colunas #primario{
+  width: 555px;
+  float: left;
+  margin: 0 0 20px 195px;
+}
+
+#uma-coluna #primario{
+  width: 750px;
+  margin: 0 0 20px 0;
+}
+
+#primario{
+  width: 270px;
+  float: left;
+  margin: 0 0 20px 195px;
+}
+
+#secundario{
+  width: 270px;
+  float: left;
+  margin: 0 0 20px 15px;
+}
+
+/* =========================
+   CAIXAS
+========================= */
+.caixa{
+  margin: 10px 0;
+  padding: 6px 0;
+  background: #f3f3f3 url(../imagens/fundo-caixa.png);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.08);
+}
+
+h2{
+  font-size: 1em;
+  background: #294c71;
+  color: #fff;
+  padding: 10px;
+  letter-spacing: 0.2px;
+}
+
+.caixa-conteudo{
+  background: #fff;
+  padding: 12px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+/* =========================
+   MENUS LATERAIS
+========================= */
+#lateral ul a{
+  font-size: 0.9em;
+  padding: 6px 8px;
+  display: block;
+  line-height: 28px;
+  color: #111;
+  border-radius: 8px;
+  transition: background 0.2s, padding 0.2s, color 0.2s;
+}
+
+#lateral li a:hover{
+  background: #f9f9f9 url(../imagens/marcador.png) no-repeat left center;
+  padding-left: 22px;
+  color: #555;
+}
+
+/* =========================
+   FORM
+========================= */
+label{
+  display: block;
+  cursor: pointer;
+  margin-bottom: 6px;
+}
+
+input{
+  padding: 10px;
+  width: 100%;
+  font-size: 0.9em;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  outline: none;
+}
+
+input:focus{
+  border-color: #3e7ab9;
+  box-shadow: 0 0 0 3px rgba(62,122,185,0.15);
+}
+
+input.submit{
+  width: auto;
+  color: #fff;
+  background-color: #b10333;
+  border: 2px solid #870529;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+input.submit:hover{
+  background-color: #de003e;
+  border-color: #a3052f;
+}
+
+/* =========================
+   IMAGENS
+========================= */
+img.imagem-principal{
+  width: 98%;
+  border: 3px solid #dfdfdf;
+  border-radius: 10px;
+}
+
+/* =========================
+   CABEÇALHOS (h3)
+========================= */
+h3{
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 0.8em;
+  padding: 4px 6px;
+  border-radius: 6px;
+}
+
+.destaque h3{
+  background: #b10333;
+  color: #fff;
+}
+
+.entrevista h3{
+  background: #de0030;
+  color: #000;
+}
+
+/* =========================
+   LISTA DE NOTÍCIAS
+========================= */
+#lista-noticias li{
+  padding: 6px;
+  border-bottom: 1px solid #ddd;
+  min-height: 70px;
+  border-radius: 10px;
+  transition: background 0.2s;
+}
+
+#lista-noticias li a img{
+  float: left;
+  margin: 5px 10px 5px 5px;
+  border-radius: 8px;
+}
+
+#lista-noticias li a h3{
+  font-size: 0.85em;
+  padding: 0;
+  color: #3e7ab9;
+}
+
+#lista-noticias li a p{
+  font-size: 0.75em;
+  color: #111;
+}
+
+#lista-noticias li:hover{
+  background: #eee;
+  cursor: pointer;
+}
+
+/* =========================
+   RODAPÉ
+========================= */
+#container-rodape{
+  background: #294c71;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+#rodape{
+  width: 750px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+/* =========================
+   RESPONSIVO (celular)
+========================= */
+@media (max-width: 820px){
+  #container,
+  #rodape{
+    width: 95%;
+  }
+
+  #conteudo{
+    padding: 12px;
+  }
+
+  /* deixa colunas virarem 1 coluna */
+  #lateral,
+  #primario,
+  #secundario,
+  #duas-colunas #primario,
+  #uma-coluna #primario{
+    width: 100%;
+    float: none;
+    margin: 0 0 16px 0;
+  }
+
+  #topo{
+    height: auto;
+    padding-bottom: 10px;
+  }
+
+  #topo ul{
+    float: none;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #topo ul li{
+    float: none;
+  }
+
+  #topo ul a{
+    background-image: none;
+  }
+}
